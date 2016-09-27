@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+<!ELEMENT empleados (empleado*)>
+<!ELEMENT empleado (nombre, apellido, direccion, telefono+, email*, jefe*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT jefe EMPTY>
+<!ATTLIST empleado iden ID #REQUIRED>
+<!ATTLIST empleado sexo (M|H) #REQUIRED>
+<!ATTLIST jefe de IDREFS #REQUIRED>
+]>
+<empleados>
+  <empleado iden="em01" sexo="M">
+    <nombre>Eliana</nombre>
+    <apellido>Ferioli</apellido>
+    <direccion>Av Gandhi</direccion>
+    <telefono>656337783</telefono>
+    <email>elianaferioli@gmail.com</email>
+    <email>elianaferioli@gmail.com</email>
+    <jefe de="em02 em03"/>
+  </empleado>
+    <empleado iden="em02" sexo="H">
+    <nombre>Jose</nombre>
+    <apellido>Soriano</apellido>
+    <direccion>Paseo del colorado</direccion>
+    <telefono>61555442</telefono>
+    <telefono>656337783</telefono>
+    <email>josesorq@gmail.com</email>
+  </empleado>
+    <empleado iden="em03" sexo="M">
+    <nombre>Silvia</nombre>
+    <apellido>Nuñez</apellido>
+    <direccion>Julio 4121</direccion>
+    <telefono>624558897</telefono>
+  </empleado>
+</empleados>

@@ -1,0 +1,45 @@
+(:2.1. Nombre y apellidos de todas las empleadas (sexo femenino) en orden creciente de apellidos. 
+Los datos de cada empleada deben aparecer entre las etiquetas <datos> y </datos>.:)
+(:for $res in doc("ejercicio1.xml")//empleado
+let $nom:=$res/nombre
+let $ape:=$res/apellido
+where $res[@sexo="M"]
+order by $res/apellido ascending
+return (<datos><nombre>{data($nom)}</nombre><apellido>{data($ape)}</apellido></datos>):)
+(:2.2. Nombre, apellidos y teléfonos de los empleados que son jefes. Los datos de cada empleado jefe deben 
+aparecer entre las etiquetas <jefe> y </jefe>.:)
+(:for $res in doc("ejercicio1.xml")//empleado
+let $nom:=$res/nombre
+let $ape:=$res/apellido
+let $tel:=$res/telefono
+where $res/jefe
+return (<jefe>{$nom, $ape, $tel}</jefe>):)
+(:2.3. Generar un documento html que muestre una lista ordenada con el nombre y los apellidos de todas los 
+empleados de la empresa por orden decreciente de apellidos. El documento html debe tener un titulo y la 
+codificación utf-8:)
+(:<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Empleados</title>
+</head>
+
+<body>
+	<h1>Empleados</h1>
+	<table border="2">
+	<tr>
+           	<th>Nombre</th>
+	        <th>Apellido</th>
+	</tr>
+	{
+	for $res in doc("ejercicio1.xml")//empleado
+	let $nom:=$res/nombre
+	let $ape:=$res/apellido
+	order by $res/apellido descending
+	return
+	<tr>
+	<td>{data($nom)}</td> <td>{data($ape)}</td>
+	</tr>
+	}
+	</table>
+</body>
+</html>:)
