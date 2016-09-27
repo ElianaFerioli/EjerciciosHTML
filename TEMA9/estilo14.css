@@ -1,0 +1,24 @@
+body{
+	background-color: #009999;
+	margin-left: 25%;
+	margin-top: 10%;
+}
+div.uno {
+	width: 350px;
+	height: 250px;
+	background-color: #00ff00;
+	border: 3px solid red;
+}
+div.dos {
+	width: 80%;
+	height: 35%;
+	background-color: #ff0066;
+	margin: 0 auto;
+	margin-top: 7%;
+}
+div.tres {
+	width: 80%;
+	height: 35%;
+	background-color: blue;
+	margin: 0 auto;
+}

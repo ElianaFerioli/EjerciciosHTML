@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Este es el título</title>
+	<style>
+		label.negrita {
+			font-weight: bold;		
+		}
+		legend.negrita {
+			font-weight: bold;		
+		}
+		fieldset#basico {
+			width:30%;
+		}
+		fieldset#economicos {
+			width:30%;
+		}
+	
+	</style>
+</head>
+<body>
+	<h3>Información sobre el producto</h3>
+	<form name="formulario" action="#" autocompletle="off" method="post" enctype="multipart/form-data">
+
+		<fieldset id="basico">
+			<legend class="negrita">Datos básicos</legend>
+				<table>
+					<tr>
+						<td colspan="2">
+							Nombre
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="text" name="nombre" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Descripción
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<textarea cols="50" rows="7" style="overflow-y:scroll"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Foto
+							<input type="file" multiple name="archivo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="contador">
+								Añadir contador de visitas
+						</td>
+					</tr>
+				</table>
+		</fieldset>
+		<fieldset id="economicos">
+			<legend class="negrita">Datos económicos</legend>
+				<table>
+					<tr>
+						<td>
+							Precio <input type="number" step="0.01" name="precio">€
+						</td>
+						<td>
+							Impuestos
+							<select name="impuestos">
+								<option selected>4%</option>
+								<option>7%</option>
+								<option>16%</option>
+								<option>25%</option>
+							</select>
+							€
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Promoción
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="radio" name="promo" value="ninguno">Ninguno<br>
+							<input type="radio" name="promo" value="gratis">Transporte gratuito<br>
+							<input type="radio" name="promo" value="descuento">Descuento 5%
+						</td>
+					</tr>
+				</table>
+		</fieldset>
+		<br>
+		<br>		
+		<input type="submit" name="ok" value="Enviar">
+
+	</form>
+</body>
+</html>

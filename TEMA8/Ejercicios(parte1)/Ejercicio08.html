@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Este es el título</title>
+</head>
+
+<body>
+	<form name="formulario" action="./datos/datos.html" autocompletle="off" enctype="text/plain" method="post" novalidate="novalidate">
+		Nombre:<br><input type="text" name="nombre" autocomplete="on" placeholder="Nombre" required="required">
+		<br>
+		E-mail<br><input type="email" name="email" autocomplete="on" required="required" placeholder="Email">
+		<br>
+		<select autofocus name="colores">
+		<option  selected value="seleccione">Seleccione pais</option>
+		<option value="azul">España</option>
+		<option value="verde">Francia</option>
+		<option value="naranja">Italia</option>
+		<option value="azul">Holanda</option>
+		<option value="verde">Polonia</option>
+		</select>
+		<br>
+		Como calificaría este sitio: 
+		<select autofocus name="colores">
+		<option  selected value="bueno">Bueno</option>
+		<option value="mejorable">Mejorable</option>
+		<option value="malo">Malo</option>
+		</select>
+		<br>
+		<textarea name="comentario" cols="50" rows="10">Escribe tu comentario</textarea>
+		<br>
+		<input name="boton" type="submit" value="Enviar">
+		<br>
+	</form>
+
+</body>
+
+</html>

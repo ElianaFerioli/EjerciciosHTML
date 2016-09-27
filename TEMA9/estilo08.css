@@ -1,0 +1,7 @@
+.rectangulo {
+	border-top: 5px dotted grey;
+	border-bottom: 5px dashed grey;
+	border-left: 5px solid grey;
+	width: 600px;
+	height: 150px;
+}

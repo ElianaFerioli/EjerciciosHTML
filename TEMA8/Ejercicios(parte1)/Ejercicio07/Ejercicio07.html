@@ -1,0 +1,42 @@
+﻿<html>
+<head>
+	<title>Prueba de formulario</title>
+	<style>
+		label.negrita {
+			font-weight: bold;		
+		}
+		legend.negrita {
+			font-weight: bold;		
+		}
+	
+	</style>
+</head>
+<body>
+	<form name="formulario" action="./datos/datos.html" autocompletle="off" enctype="text/plain" method="post" novalidate="novalidate">
+		<fieldset style="width:35%">
+			<legend class="negrita">Datos Personales</legend>
+				<label class="negrita" for="apenom">Apellido y nombre: </label>
+				<input id="apenom" type="text" name="nombre" size="30"><br>
+				<label class="negrita" for="dni">Documento de identidad: </label>
+				<input id="dni" type="text" name="dni" size="25"><br>
+				<label class="negrita" for="fechnac">Fecha de nacimiento: </label>
+				<input id="fechnac" type="text" name="fechanac" size="10"><br>
+				<label class="negrita" for="dirpersonal">Dirección: </label>
+				<input id="dirpersonal" type="text" name="direccionpersonal" size="10"><br>
+		</fieldset>
+		<fieldset style="width:35%">
+			<legend class="negrita">Datos Laborales</legend>
+				<label class="negrita" for="nomempresa">Nombre de la empresa:</label>
+				<input id="nomempresa" type="text" name="nombreempresa" size="30"><br>
+				<label class="negrita" for="actividad"> Actividad: </label>
+				<input id="actividad" type="text" name="actividad" size="25"><br>
+				<label class="negrita" for="dirempresa">Dirección: </label>
+				<input id="dirempresa"type="text" name="direccionempresa" size="10"><br>
+		</fieldset>
+		<br>
+		<br>
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

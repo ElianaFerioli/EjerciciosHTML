@@ -1,0 +1,13 @@
+div.gris {
+	width: 600px;
+	height: 150px;
+	background-color: grey;
+	padding-left: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+div.blanco {
+	width: 97%;
+	height: 99%;
+	background-color: white;
+}

@@ -1,0 +1,211 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Este es el título</title>
+	<style>
+		
+		
+		table {
+			margin: 50 auto;
+			background-color: #4d0f00;
+			color: white;
+			text-align: left;
+		}
+		th {
+			color: #e67300;
+			text-align: left;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		td.izquierda, th.izquierda {
+			padding-left: 15px;
+		}
+		td.derecha, th.derecha {
+			padding-right: 15px;
+		}
+		input.boton {
+			font-size:20px;
+			font-weight:bold;
+			color:#4d0f00;
+			background:#e67300;
+			border: none;
+			border-radius: 50px;
+			width: 60%;
+			cursor: pointer;
+			padding: 5px 0;
+		}
+		input.borrar {
+			font-weight:bold;
+			color:white;
+			background: #4d0f00;
+			border: none;
+			cursor: pointer;
+			padding-top: 5px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div>
+		<form name="formulario" action="#" autocompletle="off" method="post" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<th colspan="2" style="font-size:19px; padding-top:10px" class="izquierda">
+						Buscar Alojamiento Rural
+					</th>
+				</tr>
+				<tr>
+					<td colspan="2" class="izquierda derecha">
+						<select name="provincia" style="width:100%">
+							<option selected disabled>Selecciona la provincia...</option>
+							<option value="cordoba">Córdoba</option>
+							<option value="sevilla">Sevilla</option>
+							<option value="huelva">Huelva</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="izquierda derecha">
+						<input type="text" placeholder="Texto libre a buscar" name="busqueda"  style="width:100%">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2" class="izquierda derecha">
+						Más filtros de búsqueda
+					</th>
+				</tr>
+				<tr>
+					<td colspan="2" class="izquierda derecha">
+						Tipo de alquiler
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="izquierda derecha">
+						<select name="alquiler" style="width:100%">
+							<option selected disabled>Todos</option>
+							<option value="cordoba">Córdoba</option>
+							<option value="sevilla">Sevilla</option>
+							<option value="huelva">Huelva</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda">
+					NºPlaza
+					</td>
+					<td class="derecha">
+					Precio/Persona
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda">
+						<select name="plazas" style="width:100%">
+								<option selected disabled>Todos</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+						</select>
+					</td>
+					<td class="derecha">
+						<select name="precio" style="width:100%; padding-left:0px">
+								<option selected disabled>Todos</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda derecha" colspan="2">
+						Población
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda derecha" colspan="2">
+						<select name="poblacion" style="width:100%">
+								<option selected disabled>Todas pobl.</option>
+								<option value="3">sarasa</option>
+								<option value="4">sarasa</option>
+								<option value="5">sarasa</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th class="izquierda derecha" colspan="2">
+						Características
+					</th>
+				</tr>
+				<tr>
+					<td class="izquierda">
+						<input name="casilla" type="checkbox" value="barbacoa"> Barbacoa
+					</td>
+					<td class="derecha">
+						<input name="casilla" type="checkbox" value="jardin"> Jardin
+					</td>
+				</tr>
+					<td class="izquierda">
+						<input name="casilla" type="checkbox" value="Mascotas"> Mascotas
+					</td>
+					<td class="derecha">
+						<input name="casilla" type="checkbox" value="piscina"> Piscina
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda">
+						<input name="casilla" type="checkbox" value="chimenea"> Chimenea
+					</td>
+					<td class="derecha">
+						<input name="casilla" type="checkbox" value="jacuzzi"> Jacuzzi
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda derecha" colspan="2" style="font-weight:bold">
+						[+] Características
+					</td>
+				</tr>
+				<tr>
+					<th class="izquierda derecha" colspan="2">					
+						Actividades
+					</th>
+				</tr>
+				<tr>
+					<td class="izquierda">				
+						<input name="casilla" type="checkbox" value="senderismo"> Senderismo
+					</td>
+					<td class="derecha">
+						<input name="casilla" type="checkbox" value="multiaventura"> Multiaventura
+					</td>
+				</tr>
+				<tr>
+					<td class="izquierda derecha" colspan="2" style="font-weight:bold">
+						[+] Actividades
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center" >
+						<input type="submit" name="buscar" value="Buscar" class="boton">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center; font-weight:bold; padding-bottom:10px">
+						<input type="reset" name="buscar" value="[Borrar filtros de búsqueda]" class="borrar">
+					</td>
+				</tr>				
+				</form>
+			</table>
+	</div>
+</body>
+</html>

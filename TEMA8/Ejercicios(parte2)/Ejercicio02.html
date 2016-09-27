@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Este es el título</title>
+	<style>
+		label.negrita {
+			font-weight: bold;		
+		}
+		legend.negrita {
+			font-weight: bold;		
+		}
+		fieldset#personales {
+			width:20%;
+			height: 220px;
+		}
+		input#boton {
+			margin-left: 8%;
+		}
+	
+	</style>
+</head>
+<body>
+	<form name="formulario" action="#" autocompletle="off" method="post" enctype="multipart/form-data">
+		<h3>Rellena tu CV</h3>
+		<fieldset id="personales">
+			<legend class="negrita">Datos personales</legend>
+				<table>
+					<tr>
+						<td colspan="2">
+							Provincia
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select name="provincia">
+								<option value="malaga">Málaga</option>
+								<option value="cordoba">Córdoba</option>
+								<option value="sevilla">Sevilla</option>
+								<option value="huelva">Huelva</option>
+								<option value="almeria">Almería</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Fecha de nacimiento
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input style="width:13%" type="number" name="diadenacimiento" max="31"> de
+							<select name="mesnacimiento">
+								<option value="enero">Enero</option>
+								<option value="febrero">Febrero</option>
+								<option value="marzo">Marzo</option>
+								<option value="abril">Abril</option>
+								<option value="mayo">Mayo</option>
+								<option value="junio">Junio</option>
+								<option value="julio">Julio</option>
+								<option value="agosto">Agosto</option>
+								<option value="septiembre">Septiembre</option>
+								<option value="octubre">Octubre</option>
+								<option value="noviembre">Noviembre</option>
+								<option value="diciembre">Diciembre</option>
+							</select> de
+							<input style="width:20%" type="number" name="anio" min="1910">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Temas de interés
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="interes" multiple size="5">
+								<option value="bbdd">Administración de Bases de Datos</option>
+								<option value="prog">Analisis y Programación</option>
+								<option value="arq">Arquitectura</option>
+								<option value="q">Calidad</option>
+								<option value="erp">ERP, CRM, Bussiness Inteligence</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+		</fieldset>
+		<br>
+		<input id="boton" type="submit" name="ok" value="Enviar">
+
+	</form>
+</body>
+</html>

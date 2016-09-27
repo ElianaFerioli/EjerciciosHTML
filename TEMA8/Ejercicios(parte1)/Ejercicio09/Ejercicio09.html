@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Este es el título</title>
+	<style>
+	body {
+		background-color: #ff6600;
+	}
+	table {
+		background-color: #ffe5b3;
+		margin: 0 auto;
+		width: 90%;
+	}
+	table, tr, td {
+		text-align: center;
+		color: #ff6600;
+		font-size: 14px;
+	}
+		
+	span#amarillo {
+		color: yellow;
+		font-weight: bold;
+	}
+	span#negrita {
+		font-weight: bold;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div>
+		<form name="formulario" action="./formulario.html" autocompletle="off" enctype="text/plain" method="post">
+			<table>
+				<tr>
+					<td  colspan="2" style="color:white;font-weight:bold">Encuesta-Preferencias de Usuarios</td>
+				</tr>
+				<tr>
+					<td colspan="2" >Este test ha sido desarrollado a modo de <span id="amarillo">ejemplo</span> por la alumna Eliana Ferioli de primero de DAW</td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span id="negrita">Pregunta 1:</span> ¿Cuál de las siguiente imágenes te gusta más?
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; width:43%">
+						<input type="radio" name="imagen" value="syd">
+					</td>
+					<td style="text-align:left">
+						<img type="image" src="./imagenes/sydney.jpg" alt="sydney" width="200" height="125">
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						<input type="radio" name="imagen" value="bai">
+					</td>
+					<td style="text-align:left">
+						<img type="image" src="./imagenes/baires.jpg" alt="baires" width="200" height="133">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span id="negrita">Pregunta 2:</span> Indica qué lugares prefieres para descansar.
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						<input type="checkbox" name="preferencia" value="playa">
+					</td>
+					<td style="text-align:left">
+						Playa
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						<input type="checkbox" name="preferencia" value="campo">
+					</td>
+					<td style="text-align:left">
+						Campo
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						<input type="checkbox" name="preferencia" value="montana">
+					</td>
+					<td style="text-align:left">
+						Montaña
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span id="negrita">Pregunta 3:</span> Introduzca su nombre y apellido.
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						Nombre:
+					</td>
+					<td style="text-align:left">
+						<input type="text" name="nombre">
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						Apellidos: 
+					</td>
+					<td style="text-align:left">
+						<input type="text" name="apellidos">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span id="negrita">Pregunta 4:</span> ¿Ciudad de origen?
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right">
+						Ciudad:
+					</td>
+					<td style="text-align:left">
+						<select autofocus name="ciudad">
+							<option disabled selected>Elige una opción</option>
+							<option value="malaga">Málaga</option>
+							<option value="sevilla">Sevilla</option>
+							<option value="jaen">Jaen</option>
+							<option value="granada">Granada</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input name="boton" type="submit" value="Enviar Cuestionario">
+					</td>
+				</tr>		
+			</table>
+		</form>
+	</div>
+
+</body>
+
+</html>

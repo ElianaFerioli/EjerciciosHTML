@@ -1,0 +1,28 @@
+div.none {
+	width: 296px;
+	height: 21px;
+	background-color: grey;
+	text-align: center;
+	padding-top: 5px;
+}
+div.dotted {
+	width: 288px;
+	height: 16px;
+	background-color: grey;
+	text-align: center;
+	border: 4px dotted black;
+}
+div.dashed {
+	width: 288px;
+	height: 16px;
+	background-color: grey;
+	text-align: center;
+	border: 4px dashed black;
+}
+div.solid {
+	width: 288px;
+	height: 16px;
+	background-color: grey;
+	text-align: center;
+	border: 4px solid black;
+}

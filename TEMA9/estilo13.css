@@ -1,0 +1,20 @@
+div.uno {
+	width: 800px;
+	height: 100px;
+	background-color: #009999;
+}
+div.dos {
+	width: 800px;
+	height: 100px;
+	background-color: #00ff00;
+}
+div.tres {
+	width: 800px;
+	height: 100px;
+	background-color: #ff0066;
+}
+div.cuatro {
+	width: 800px;
+	height: 100px;
+	background-color: blue;
+}
